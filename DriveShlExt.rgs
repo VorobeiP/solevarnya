@@ -1,0 +1,95 @@
+HKCR
+{
+	NoRemove CLSID
+	{
+		ForceRemove {F4DD580A-D0DC-43C5-A9FE-A90EA9701FE2} = s 'DriveShlExt Class'
+		{
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{40EC5365-813F-4F47-A00D-9AD715DB41CB}'
+			Version = s '1.0'
+		}
+	}
+}
+HKCR
+{
+    NoRemove Directory
+    {
+        NoRemove shellex
+        {
+            NoRemove PropertySheetHandlers
+            {
+                {F4DD580A-D0DC-43C5-A9FE-A90EA9701FE2}
+            }
+        }
+    }
+}
+HKCR
+{
+    NoRemove Folder
+    {
+        NoRemove shellex
+        {
+            NoRemove PropertySheetHandlers
+            {
+                {F4DD580A-D0DC-43C5-A9FE-A90EA9701FE2}
+            }
+        }
+    }
+}
+HKCR
+{
+    NoRemove DVD
+    {
+        NoRemove shellex
+        {
+            NoRemove PropertySheetHandlers
+            {
+                {F4DD580A-D0DC-43C5-A9FE-A90EA9701FE2}
+            }
+        }
+    }
+}
+HKCR
+{
+    NoRemove AllFileSystemObjects
+    {
+        NoRemove shellex
+        {
+            NoRemove PropertySheetHandlers
+            {
+                {F4DD580A-D0DC-43C5-A9FE-A90EA9701FE2}
+            }
+        }
+    }
+}
+
+HKCR
+{
+    NoRemove *
+    {
+        NoRemove shellex
+        {
+            NoRemove PropertySheetHandlers
+            {
+                {F4DD580A-D0DC-43C5-A9FE-A90EA9701FE2}
+            }
+        }
+    }
+}
+HKCR
+{
+    NoRemove AudioCD
+    {
+        NoRemove shellex
+        {
+            NoRemove PropertySheetHandlers
+            {
+                {F4DD580A-D0DC-43C5-A9FE-A90EA9701FE2}
+            }
+        }
+    }
+}
